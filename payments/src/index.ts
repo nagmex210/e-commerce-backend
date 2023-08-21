@@ -3,7 +3,7 @@ import { app } from './app';
 import { natsWrapper } from './nats-wrapper';
 import { OrderCancelledListener } from './events/listeners/order-cancelled-listener';
 import { OrderCreatedListener } from './events/listeners/order-created-listener';
-
+//stripe doesnt work currently on turkey make sure to change your payment service
 const start = async () => {
   if (!process.env.JWT_KEY) {
     throw new Error('JWT_KEY must be defined');
